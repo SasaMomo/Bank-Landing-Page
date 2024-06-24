@@ -54,10 +54,31 @@ export default function Header() {
         <div
           className={
             ToggleMenu
-              ? "fixed left-2 top-[88px] w-[75vw] sm:w-[80vw] md:hidden h-[80vh] bg-pri-mold p-10 ease-in duration-500 z-50 rounded-xl"
-              : "fixed left-0 top-0 w-[-100%]"
+              ? "fixed left-2 top-[88px] w-[100vw] sm:w-[100vw] md:hidden h-[80vh] bg-pri-mold p-10 ease-in duration-500 z-50 rounded-xl"
+              : "fixed left-0 top-0 w-[-100%] z-[-1]"
           }
-        ></div>
+        >
+          <nav className="flex flex-col gap-y-4 items-center justify-between mx-auto text-center text-3xl">
+            <Link href="/" className="font-bold w-full border-b-4 py-4 w-full">
+              Para Você
+            </Link>
+            <Link href="/" className="font-bold w-full border-b-4 p-4">
+              Para Empresas
+            </Link>
+            <Link href="/" className="font-bold w-full border-b-4 p-4">
+              Serviços
+            </Link>
+            <Link href="/" className="font-bold w-full border-b-4 p-4">
+              Ajuda
+            </Link>
+            <Link href="/" className="font-bold w-full border-b-4 p-4">
+              Google Play
+            </Link>
+            <Link href="/" className="font-bold w-full border-b-4 p-4">
+              Apple Store
+            </Link>
+          </nav>
+        </div>
       </div>
     </header>
   );

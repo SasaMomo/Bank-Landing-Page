@@ -27,7 +27,7 @@ export default function Home() {
           alt="Apple Store icon"
           width={720}
           height={461}
-          className="bg-dar-green/0 border-0 rounded-lg hover:bg-white hover:border-dar-green active:animate-bounce"
+          className="bg-dar-green/0 border-0 rounded-lg hover:border-dar-green hover:border-8 hover:border-white/0"
         />
       </main>
       <Footer />
